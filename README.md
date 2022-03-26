@@ -1,4 +1,4 @@
 <h1>Reading Pictures</h1>
 
-python main.py scan - read images in the selected folder
-python main.py clear - clear photos in the selected folder
+<p>python main.py scan - Read images in the selected folder</p>
+<p>python main.py clear - Clear photos in the selected folder</p>
