@@ -37,14 +37,17 @@ class ReadingText:
     def __parsingPhotos():  # Перебирає всі картинки в папці
         result = ''
         list_photo_names = os.listdir(ReadingText.folder_path)
+        i = 0
 
         if not list_photo_names:
             return print(None)
 
         for screenshot in list_photo_names:
             if '.png' in screenshot:
+                result += f'----- {i} -----\n'
                 result += ReadingText.__resultsHandler(
                     ReadingText.folder_path + screenshot) + '\n'
+            i += 1
 
         clipboard.copy(result)  # Копіює в буфер
         print(result)
